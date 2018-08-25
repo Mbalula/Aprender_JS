@@ -23,7 +23,7 @@ function range(start, end, incr){
     var arr=[];
     if (incr==undefined)
         incr=1;
-        
+
     if (start<end) {
         for(var i=start; i<=end; i=i+Math.abs(incr))
             arr.push(i);
@@ -47,21 +47,18 @@ function sum(arrarg){
 }
 
 console.log(range(1, 10));
-// → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+// → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+document.write (range(1, 10),"<br>");
+
 console.log(range(5, 2, -1));
-// → [5, 4, 3, 2] 
+// → [5, 4, 3, 2]
+document.write (range(5, 2, -1),"<br>");
+
 console.log(sum(range(1, 10)));
 // → 55
+document.write (sum(range(1, 10)),"<br>");
+
 console.log(range(10, 3, 3));
-
-
+document.write (range(10, 3, 3),"<br>");
 
 //console.log(sum(arrnum));
-
-
-
-
-  document.write (hash,"<br>");
-    }
-    nimpress += 1;
-}

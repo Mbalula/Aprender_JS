@@ -17,6 +17,7 @@ function arrayToList(arr){
 
 console.log(JSON.stringify(arrayToList([10, 20])));
 // → {value: 10, rest: {value: 20, rest: null}}
+document.write (JSON.stringify(arrayToList([10, 20])),"<br>");
 
 
 function listToArray(list){
@@ -29,6 +30,7 @@ function listToArray(list){
 
 console.log(JSON.stringify(listToArray(arrayToList([10, 20, 30]))));
  // → [10, 20, 30]
+document.write (JSON.stringify(listToArray(arrayToList([10, 20, 30]))),"<br>");
 
 
 function prepend(elem, list){
@@ -40,6 +42,7 @@ function prepend(elem, list){
 
 console.log(JSON.stringify(prepend(10, prepend(20, null))));
 // → {value: 10, rest: {value: 20, rest: null}}
+document.write (JSON.stringify(prepend(10, prepend(20, null))),"<br>");
 
 function nth (list, num){
     var valor=list.value;
@@ -57,7 +60,7 @@ function nth (list, num){
             valor=aux;
             //console.log("2if");
             break
-        }  
+        }
         else if (node.rest==null){
             ////valor=undefined;
             cont=cont+1;
@@ -82,6 +85,7 @@ function nth (list, num){
 
 console.log(nth(arrayToList([10, 20, 30]), 1));
 // → 20
+document.write (nth(arrayToList([10, 20, 30]), 1),"<br>");
 
 
 //var x=0
@@ -92,7 +96,7 @@ function nthrec (list, num){
   //console.log(list.value);
   //console.log(num);
   //console.log(JSON.stringify(list));
-    
+
     if (num==0){
         //var x=list.value;
         return list.value
@@ -108,39 +112,4 @@ function nthrec (list, num){
 }
 console.log("rec "+nthrec(arrayToList([10, 20, 30]), 1));
 // → 20
-
-/*
-function test (yyy){
-  var x=4+yyy
-  console.log("-------");
-  console.log(yyy);
-  console.log(x);
-    
-    if (yyy==0){
-        //var x=list.value;
-        return x
-    }
-    else{
-        xyy=yyy-1
-        return (yyy-1)
-    }
-}
-console.log("teste 1 "+test(6));
-
-
-function test2 (yyy){
-    function test3 (yyy){
-      var x=40+yyy
-      return x
-    }
-    return test3(yyy)
-}
-console.log("teste 2 "+test2(2));
-*/
-
-
-
-  document.write (hash,"<br>");
-    }
-    nimpress += 1;
-}
+document.write (nthrec(arrayToList([10, 20, 30]), 1),"<br>");

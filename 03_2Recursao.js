@@ -23,22 +23,19 @@ Testes JS
 var isEven = function(n){
     if (n == 0)
        return true;
-    
+
     else if (n == 1)
         return false;
-          
+
     else
         return isEven(n-2);
 }
 
-
 console.log(isEven(50)); // → true
+document.write (isEven(50),"<br>");
+
 console.log(isEven(75)); // → false
+document.write (isEven(75),"<br>");
+
 console.log(isEven(-1)); // → ??
-
-
-
-  document.write (hash,"<br>");
-    }
-    nimpress += 1;
-}
+document.write (isEven(-1),"<br>");

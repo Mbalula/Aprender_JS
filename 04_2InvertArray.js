@@ -32,6 +32,7 @@ console.log(reverseArray(arr));
 
 console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
+document.write (reverseArray(["A", "B", "C"]),"<br>");
 
 
 var arrayValue = [1, 2, 3, 4, 5];
@@ -49,9 +50,4 @@ function reverseArrayInPlace(a){
 reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
-
-
-  document.write (hash,"<br>");
-    }
-    nimpress += 1;
-}
+document.write (arrayValue,"<br>");

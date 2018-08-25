@@ -14,11 +14,7 @@ var min= function (a,b) {
 }
 
 console.log(min(0, 10)); // → 0
+document.write (min(0, 10),"<br>");
+
 console.log(min(0, -10)); // → -10
-
-
-
-  document.write (hash,"<br>");
-    }
-    nimpress += 1;
-}
+document.write (min(0, -10),"<br>");
